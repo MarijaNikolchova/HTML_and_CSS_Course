@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            background: #999;
+            border: 0;
+            color: white;
+            font-size: 12px;
+            height: 50px;
+            width: 200px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create New Account</h1>
+    <form action="url_toSend_from_data" method="post">
+        <fieldset>
+            <div>
+                <label for="title">Title:</label><br />
+                <select id="title">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Miss">Miss</option>
+                </select>
+            </div>
+            <div>
+                <label for="First_name">First Name:</label><br />
+                <input type="text" name="firstname" id="first_name" />
+            </div>
+            <div>
+                <label for="Last_name">Last Name:</label><br />
+                <input type="text" name="lastname" id="last_name" />
+            </div>
+            <div>
+                <label for="message">Message:</label><br />
+                <textarea id="message" rows="5" cols="20"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
