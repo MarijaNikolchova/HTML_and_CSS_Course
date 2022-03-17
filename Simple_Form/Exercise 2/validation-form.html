@@ -40,10 +40,12 @@
             padding: 10px 0;
             width: 200px;
         }
+
         .select-wrapper {
             position: relative;
             width: 200px;
         }
+
         .select-wrapper::after{
             content: '<>';
             color: #667;
@@ -53,6 +55,16 @@
             transform: rotate(90deg);
             position: absolute;
             z-index: 1;
+        }
+
+        input:valid, 
+        textarea:valid {
+            border-bottom: 1px solid green;
+        }
+
+        input:invalid, 
+        textarea:invalid {
+            border-bottom: 1px solid red;
         }
     </style>
 </head>
@@ -67,6 +79,10 @@
                 <label for="last-name">Last name:</label><br>
                 <input type="text" name="lastname" id="last-name" placeholder="yout last name" required>
             </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" placeholder="your email" required>
+            </div>
             <div >
                 <label for="country">Country:</label><br>
                 <div class="select-wrapper">
@@ -80,7 +96,7 @@
             </div>
             <div>
                 <label for="country">Message:</label><br>
-                <textarea name="country" id="country" cols="20" rows="5" placeholder="Hello there..."></textarea>
+                <textarea name="country" id="country" cols="20" rows="5" placeholder="Hello there..." required></textarea>
             </div>
             <button type="submit">Submit</button>
         </fieldset>
