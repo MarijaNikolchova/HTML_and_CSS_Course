@@ -5,22 +5,30 @@ body, header, footer, nav, main, footer,h1,h2, div, img {
     border: 0;
 }
 
-/*Style rules for bodyt*/
+/*Style rules for body*/
 body {
     background-color: black;
 }
 
+/*Style rules for mobile viewport*/
 /*Style rules for header content*/
 header {
-    float: left;
-    width: 25%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
+    z-index: 1;
+}
+
+header img {
+    margin: 0 auto;
 }
 
 /*Style rules for navigation area*/
 nav  {
-    float: right;
-    margin: 5em 3em 0 0;
-    width: 70%;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
@@ -30,10 +38,9 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
     font-size: 1.2em;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    border-top: 1px solid #fff;
 }
 
 nav ul li a {
