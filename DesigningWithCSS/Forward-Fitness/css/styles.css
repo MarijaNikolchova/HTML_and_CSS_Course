@@ -1,4 +1,4 @@
-body, header, footer, nav, main, footer,h1,h2, div, img {
+body, header, nav, main, footer, h1, h2, div, img, ul, figure, figcaption, section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,10 +10,9 @@ body {
 }
 
 /*Style rules for mobile viewport*/
-/*Style rules for header content*/
+
+/*Style rules for header*/
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #000;
     height: 190px;
@@ -76,6 +75,10 @@ main {
     font-family: 'Roboto Slab', serif;
 }
 
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
 .tel-link {
     background-color: #404040;
     padding: 2%;
@@ -113,6 +116,11 @@ img {
     display: block;
 }
 
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
 #hero {
     clear: both;
     position: relative;
@@ -147,6 +155,52 @@ footer p a {
     height: 50%;
 }
 
+#contact {
+    text-align: center;
+}
+
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+
+.external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.grid-item4 {
+    grid-column: 1 / span 4;
+}
+
 /*Media Query for Tablet Viewport*/
 @media screen and (min-width: 630px) {
 
@@ -160,14 +214,11 @@ footer p a {
     }
 
     /*Tablet viewport: Style rule for header*/
-
     header {
-        position: static;
         padding-bottom: 2%;
     }
 
     /*Tablet Viewport: Style rules for nav area*/
-
     nav ul li {
         border-top: none;
         display: inline-block;
@@ -183,9 +234,28 @@ footer p a {
     }
 
     /*Tablet Viewpoer: Style rules for main contant area*/
-
     main ul {
         margin: 0 0 4% 10%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
     }
 
     #exercises {
@@ -216,11 +286,9 @@ footer p a {
 }
 
 /*Media Query for Desktop Viewport*/
-
 @media screen and (min-width: 769px) {
 
 /*Desktop Viewport: Style rules for header*/
-
     header {
         width: 25%;
         float: left;
@@ -246,13 +314,17 @@ footer p a {
     }
 
     /*Desktop Viewport: Style Rules for main content*/
-
     main {
         clear: both;
     }
 
     main h1 {
         font-size: 1.8em;
+    }
+
+    .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
     }
 
     #waights, #cardio, #training {
@@ -267,7 +339,6 @@ footer p a {
 }
 
 /*Media Quary for Large Desktop Viewports*/
-
 @media screen and (min-width: 1921px) {
     #container {
         width: 1290px;
@@ -275,24 +346,5 @@ footer p a {
     }
 }
 
-#contact {
-    text-align: center;
-}
 
-#contact .contact-email-link {
-    color: #666600;
-    text-decoration: none;
-}
-
-.action {
-    font-size: 1.35em;
-    color: #666600;
-    font-weight: bold;
-}
-
-.external-link {
-    color: #666600;
-    font-weight: bold;
-    text-decoration: none;
-}
 
