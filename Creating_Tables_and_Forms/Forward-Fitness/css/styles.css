@@ -1,5 +1,6 @@
 /* 
 Author: Marija Nikolchova
+Data: 31.03.2022
 File Name: styles.css
 */
 
@@ -335,6 +336,35 @@ article:nth-of-type(2) {
         width: 600px;
         height: 450px;
     }
+
+    /*Tablet Viewport: Style rules for table*/
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+    }
+
+    th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
 }
 
 /* Media Query for Desktop */
@@ -404,5 +434,9 @@ article:nth-of-type(2) {
     #container {
         width: 1920px;
         margin: 0 auto;
+    }
+
+    table {
+        width: 80%;
     }
 }
