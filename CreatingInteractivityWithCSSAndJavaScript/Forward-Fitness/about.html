@@ -3,19 +3,20 @@
 Marija
 Nikolchova-->
 <html lang="en">
-
+​
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forward Fitness Club</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 </head>
-
+​
 <body>
     <div id="container">
-
-        <!-- Mobile Nav -->
-        <nav class="mobile-nav">
+​
+         <!-- Mobile Nav -->
+         <nav class="mobile-nav">
             <div id="menu-links">
                 <a href="./index.html">Home</a>
                 <a href="./about.html">About us</a>
@@ -27,15 +28,15 @@ Nikolchova-->
                 <div>&#9776;</div>
             </a>
         </nav>
-
+​
         <!--Use the header area for the website name or logo-->
         <header id="ffc-logo">
             <a href="./index.html">
                 <img src="./images/forward-fitness-logo.png" alt="Forward Fitness Club Logo" />
             </a>
         </header>
-
-        <!-- Tablet-Desktop Nav -->
+​
+         <!-- Tablet-Desktop Nav -->
         <nav class="tablet-desktop">
             <ul>
                 <li><a href="./index.html">Home</a></li> 
@@ -47,24 +48,24 @@ Nikolchova-->
         </nav>
         <!--Use the main area to add the main content of the web page-->
         <main>
-
+​
             <section id="waights">
-
+​
                 <h1>Weights</h1>
-
-                <img src="./images/people-with-weights.jpg" alt="Multiple people working out wiht weights" class="round"/>
-
+​
+                <img src="./images/people-with-weights.jpg" alt="Multiple people working out wiht weights" class="round" />
+​
                 <p>Our facility includes a weight training area with several weight
                     options. Build lean muscle with weights and improve your core with
                     weight training.</p>
-
-                <ul class="tablet-desktop">
+​
+                <ul class="arrow-bullets tablet-desktop">
                     <li>Dumbells</li>
                     <li>Kettle Bells</li>
                     <li>Barbells</li>
                 </ul>
             </section>
-
+​
             <section id="cardio">
                 <h1>Cardio</h1>
                 <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" class="round"/>
@@ -78,7 +79,7 @@ Nikolchova-->
                     <li>Exercise Bikes</li>
                 </ul>
             </section>
-
+​
             <section id="training">
                 <h1>Personal training</h1>
                 <img src="./images/personal-trainer.jpg" alt="Personal Training" class="round"/>
@@ -93,9 +94,9 @@ Nikolchova-->
                     <li>Consistent Support and Motivation</li>
                 </ul>
             </section>
-
+​
             <section id="exercises" class="tablet-desktop">
-            <h1>Common Exercises</h1>
+                <h1>Common Exercises</h1>
                 <p>
                     The following are common exercises that we encourage our clients to
                     do as part of their daily exercise routine.
@@ -112,7 +113,7 @@ Nikolchova-->
                     <dd>
                         Planks build your core strength. To perform a plank, get in a push
                         up position and rest your forearms on the floor. Hold the position
-                        as long as you can. <span class="viewex" onclick="plank()">View Example</span>
+                        as long as you can.<span class="viewex" onclick="plank()">View Example</span>
                     </dd>
                     <dt>Mountain Climber</dt>
                     <dd>
@@ -122,12 +123,13 @@ Nikolchova-->
                         climbing a mountain).<span class="viewex" onclick="climbers()">View Example</span>
                     </dd>
                 </dl>
-
-                <video controls id="vid-src" src="" type="video/mp4">
-                    <source id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
-                    <p>Your browser does not support the video element.</p>
+​
+                <video controls id="example">
+                    <source id="vid-src" src="" type="video/mp4"> 
+                    <track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+                    <p>Your browser does not support the video element.</p> 
                 </video>
-
+                
                 <p>
                     For more information about how to stay active, visit
                     <a href="https://www.hhs.gov/fitness/bc-active/index.html" target="_blank" class="external-link">fitness.gov</a>
@@ -140,8 +142,9 @@ Nikolchova-->
             <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
         </footer>
     </div>
-
+​
     <script src="./scripts/script.js"></script>
+​
 </body>
-
+​
 </html>
