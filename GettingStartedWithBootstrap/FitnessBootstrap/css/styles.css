@@ -1,0 +1,36 @@
+/*
+Author: Marija Nikolchova
+Date: Current Date
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+/*Style rules for hero image and header*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.welcome {
+    position: absolute; 
+    top: 20%; 
+    margin: auto;  
+    padding: 2em;
+}
+
+.welcome p {
+    font-size: 1.25em; 
+    width: 70%; 
+    line-height: 1.5;
+}
